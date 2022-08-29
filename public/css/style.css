@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+nav {
+    background-color: rgb(126, 126, 175);/* cor de fundo */
+    display: flex;
+    align-items: center;/* alinhamento dos itens */
+    justify-content: space-between;/* espaço entre os itens */
+    position: fixed;
+    width: 100%;/* a nave ocupa 100% da tela */
+    z-index: 10;/* acima de tudo */
+  }
+  
+
+  nav ul {/*acessando a tag "ul" */
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {/*acessando a tag "li" */
+    padding: 1rem;
+  }
+
+
+  nav ul li a {/*acessando a tag "a" */
+    text-decoration: none;/* removendo sublinhado do link */
+    color: rgb(247, 247, 249);/* cor do texto*/
+    font-weight: bold;
+    font-size: 1.2rem;/* tamanho da fonte */
+    transition: 0.5s;/* tempo de mudnaça da cor */
+  }
+
+  nav ul li a:hover {/*acessando a tag "a" */
+    color: rgb(211, 34, 34);/* cor de transação */
+  }
+
+  
