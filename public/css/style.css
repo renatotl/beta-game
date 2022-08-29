@@ -40,7 +40,9 @@ nav {
 
 
   footer{
-    background-color: rgb(126, 126, 175);
-    width: 100%;
-    padding: 3rem;
+    background-color: rgb(126, 126, 175);/* cor do background */
+    width: 100%;/* pegango a largura da tela */
+    padding: 3rem;/* tamanho do footer */
+    position: fixed;/* fixa o elemento */ 
+    bottom: 0;/* colocando o rodapé em baixo */
   }
