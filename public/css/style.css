@@ -1,7 +1,9 @@
+
 *{/* zerando nossa margin e padding */
     margin:0;
     padding: 0;
-    
+   font-family: 'Roboto', sans-serif;/* estilo do fonte */
+
 }
 
 nav {
@@ -42,7 +44,10 @@ nav {
   footer{
     background-color: rgb(126, 126, 175);/* cor do background */
     width: 100%;/* pegango a largura da tela */
-    padding: 3rem;/* tamanho do footer */
+    padding: 3rem 0rem 3rem 0rem;/* tamanho do footer aplicamos o padding apenas em cima e em baixo */
     position: fixed;/* fixa o elemento */ 
     bottom: 0;/* colocando o rodapé em baixo */
+    color:rgb(247, 247, 249) ;/* cor das letras*/
+    display:flex;/* um do lado do outro */
+    justify-content:space-evenly;/* espaçamento entre os nomes */
   }
