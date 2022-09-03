@@ -12,7 +12,7 @@ nav {
     display: flex;
     align-items: center;/* alinhamento dos itens */
     justify-content: space-between;/* espaço entre os itens */
-    position: fixed;/* fixando a nav */
+   /* fixando a nav */
     width: 100%;/* a nave ocupa 100% da tela */
     z-index: 10;/* acima de tudo */
   }
@@ -38,10 +38,36 @@ nav ul li a:hover {/*acessando a tag "a" */
   color: rgb(211, 34, 34);/* cor de transação */
 }
 
+#tabela{
+  margin:3rem;
+  text-align: center;
+  display:block;
+
+}
+#tabela div{
+  display:block;
+}
+
+section form{
+  border: solid 2px #0071a5;/*o retângulo */
+  font-size: 1.9rem;/* tamanho da fonte */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #fff;/* cor de fundo */
+  color: #0071a5; /* cor da letra */ 
+  width:25%;/* o diametro da caixinha */
+}
+
+.diamantes{
+  width: 20%;
+  float: right;
+
+}
 footer{
     background-color: rgb(126, 126, 175);/* cor do background */
     width: 100%;/* pegango a largura da tela */
-    padding: 3rem 0rem 3rem 0rem;/* tamanho do footer aplicamos o padding apenas em cima e em baixo */
+    padding: 2rem 0rem 2rem 0rem;/* tamanho do footer aplicamos o padding apenas em cima e em baixo */
     position: fixed;/* fixa o elemento */ 
     bottom: 0;/* colocando o rodapé em baixo */
     
