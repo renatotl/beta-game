@@ -1,4 +1,5 @@
 
+
 *{/* zerando nossa margin e padding */
     margin:0;
     padding: 0;
@@ -15,33 +16,29 @@ nav {
     width: 100%;/* a nave ocupa 100% da tela */
     z-index: 10;/* acima de tudo */
   }
-  
 
-  nav ul {/*acessando a tag "ul" */
+nav ul {/*acessando a tag "ul" */
     list-style: none;/* removendo o stylo lista um em baido do outro e pontilhado */
     display: flex;
   }
-  
-  nav ul li {/*acessando a tag "li" */
-    padding: 1rem;
-  }
+nav ul li {/*acessando a tag "li" */
+  padding: 1rem;
+}
 
 
-  nav ul li a {/*acessando a tag "a" */
-    text-decoration: none;/* removendo sublinhado do link */
-    color: rgb(247, 247, 249);/* cor do texto*/
-    font-weight: bold;
-    font-size: 1.2rem;/* tamanho da fonte */
-    transition: 0.5s;/* tempo de mudnaça da cor */
-  }
+nav ul li a {/*acessando a tag "a" */
+  text-decoration: none;/* removendo sublinhado do link */
+  color: rgb(247, 247, 249);/* cor do texto*/
+  font-weight: bold;
+  font-size: 1.2rem;/* tamanho da fonte */
+  transition: 0.5s;/* tempo de mudnaça da cor */
+}
 
-  nav ul li a:hover {/*acessando a tag "a" */
-    color: rgb(211, 34, 34);/* cor de transação */
-  }
+nav ul li a:hover {/*acessando a tag "a" */
+  color: rgb(211, 34, 34);/* cor de transação */
+}
 
-
-
-  footer{
+footer{
     background-color: rgb(126, 126, 175);/* cor do background */
     width: 100%;/* pegango a largura da tela */
     padding: 3rem 0rem 3rem 0rem;/* tamanho do footer aplicamos o padding apenas em cima e em baixo */
@@ -61,4 +58,3 @@ nav {
     display:flex;/* um do lado do outro */
     color:rgb(247, 247, 249) ;/* cor das letras*/
   }
-
