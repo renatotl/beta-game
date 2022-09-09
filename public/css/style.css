@@ -11,9 +11,9 @@ nav {
     display: flex;
     align-items: center;/* alinhamento dos itens */
     justify-content: space-between;/* espaço entre os itens */
-    position: fixed;/* fixando a nav */
+   
     width: 100%;/* a nave ocupa 100% da tela */
-    z-index: 10;/* acima de tudo */
+    
   }
   
 
@@ -45,7 +45,7 @@ nav {
     background-color: rgb(126, 126, 175);/* cor do background */
     width: 100%;/* pegango a largura da tela */
     padding: 2rem 0rem 2rem 0rem;/* tamanho do footer aplicamos o padding apenas em cima e em baixo */
-    position: fixed;/* fixa o elemento */ 
+    
     bottom: 0;/* colocando o rodapé em baixo */
     
     
@@ -62,3 +62,47 @@ nav {
     color:rgb(247, 247, 249) ;/* cor das letras*/
   }
 
+
+
+  /* *{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-family: monospace;
+} */
+
+header{
+  margin: 2rem;
+  padding: 2rem;
+}
+
+
+#title{
+    text-align: center;
+    width: 98vw;
+    font-size: 2.3vw;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: gray;
+    width: 47vw;
+    height: 40.5vw;
+}
+.crystalElements{
+    height: 5vw;
+    width: 5vw;
+    font-size: 3.2vw;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0.2vw;
+    padding: 0.3vw;
+    border-radius: 20%;
+}
