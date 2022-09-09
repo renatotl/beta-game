@@ -37,14 +37,14 @@ function generateBoard() {
     );
   }
 }
-
+//concole
 //guarda as coordenadas iniciais da imagem
 document.addEventListener("dragstart", (e) => {
   
   selectedCrystal.x = e.clientX;
   selectedCrystal.y = e.clientY;
   // console.log(selectedCrystal)
-});
+}); 
 
 //coordenadas finais da imagem
 document.addEventListener("dragend", (e) => {
