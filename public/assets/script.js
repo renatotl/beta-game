@@ -43,8 +43,90 @@ document.addEventListener("dragstart", (e) => {
   selectedCrystal.y = e.clientY;
 });
 
+document.addEventListener("touchstart", (e) => {
+  count++;
+  selectedCrystal.x = e.clientX;
+  selectedCrystal.y = e.clientY;
+});
+
 //coordenadas finais da imagem
 document.addEventListener("dragend", (e) => {
+  const startX = selectedCrystal.x;
+  const startY = selectedCrystal.y;
+  const currentX = e.clientX;
+  const currentY = e.clientY;
+
+  const differenceX = currentX > startX ? currentX - startX : startX - currentX;
+  const differenceY = currentY > startY ? currentY - startY : startY - currentY;
+
+  const column = e.target.classList[2][6];
+  const row = e.target.classList[3][3];
+
+  const elementPositionInArr = findElementByPosition(
+    Number(column),
+    Number(row)
+  );
+
+  if (differenceX >= 3 * differenceY) {
+    if (currentX > startX) {
+      const element1 = arrCrystals[elementPositionInArr].img;
+      const element2 = arrCrystals[elementPositionInArr + 1].img;
+      arrCrystals[elementPositionInArr].img = element2;
+      arrCrystals[elementPositionInArr + 1].img = element1;
+
+      const verification = verifySequences();
+      if (verification === false) {
+        arrCrystals[elementPositionInArr].img = element1;
+        arrCrystals[elementPositionInArr + 1].img = element2;
+      }
+
+      generateBoard();
+    } else {
+      const element1 = arrCrystals[elementPositionInArr].img;
+      const element2 = arrCrystals[elementPositionInArr - 1].img;
+      arrCrystals[elementPositionInArr].img = element2;
+      arrCrystals[elementPositionInArr - 1].img = element1;
+
+      const verification = verifySequences();
+      if (verification === false) {
+        arrCrystals[elementPositionInArr].img = element1;
+        arrCrystals[elementPositionInArr - 1].img = element2;
+      }
+
+      generateBoard();
+    }
+  } else if (differenceY >= 3 * differenceX) {
+    if (currentY < startY) {
+      const element1 = arrCrystals[elementPositionInArr].img;
+      const element2 = arrCrystals[elementPositionInArr - 8].img;
+      arrCrystals[elementPositionInArr].img = element2;
+      arrCrystals[elementPositionInArr - 8].img = element1;
+
+      const verification = verifySequences();
+      if (verification === false) {
+        arrCrystals[elementPositionInArr].img = element1;
+        arrCrystals[elementPositionInArr - 8].img = element2;
+      }
+
+      generateBoard();
+    } else {
+      const element1 = arrCrystals[elementPositionInArr].img;
+      const element2 = arrCrystals[elementPositionInArr + 8].img;
+      arrCrystals[elementPositionInArr].img = element2;
+      arrCrystals[elementPositionInArr + 8].img = element1;
+
+      const verification = verifySequences();
+      if (verification === false) {
+        arrCrystals[elementPositionInArr].img = element1;
+        arrCrystals[elementPositionInArr + 8].img = element2;
+      }
+
+      generateBoard();
+    }
+  }
+});
+
+document.addEventListener("touchend", (e) => {
   const startX = selectedCrystal.x;
   const startY = selectedCrystal.y;
   const currentX = e.clientX;
