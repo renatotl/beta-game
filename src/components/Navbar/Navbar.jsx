@@ -1,12 +1,19 @@
 import "../Navbar/Navbar.css";
 
 export function Navbar(props) {
+
+  function reloadComponent(){
+    window.location.reload(true);
+  }
   return (
     <nav className="Navbar">
       <ul>
         <li>
           {" "}
-          <a onClick={() => props.setPage("gameBoard")}>
+          <a onClick={() => {
+            props.setPage("gameBoard")
+            reloadComponent()
+        }}>
             <div class="itemNavegacao">Game</div>
           </a>
         </li>
