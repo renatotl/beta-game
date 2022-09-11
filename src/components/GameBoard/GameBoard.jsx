@@ -2,11 +2,11 @@ import "../GameBoard/GameBoard.css";
 import React, { useEffect } from "react";
 import useScript from "../../hooks/useScript";
 
-export function GameBoard() {
+export function GameBoard(props) {
   useScript("./assets/script.js");
 
   return (
-    <div className="GameBoard" onChangeCapture={() => alert("teste")}>
+    <div className="GameBoard">
       <header>
         <h1 id="title">Your score: 0</h1>
       </header>
