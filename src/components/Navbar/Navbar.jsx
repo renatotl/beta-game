@@ -1,8 +1,7 @@
 import "../Navbar/Navbar.css";
 
 export function Navbar(props) {
-
-  function reloadComponent(){
+  function reloadComponent() {
     window.location.reload(true);
   }
   return (
@@ -10,10 +9,12 @@ export function Navbar(props) {
       <ul>
         <li>
           {" "}
-          <a onClick={() => {
-            props.setPage("gameBoard")
-            reloadComponent()
-        }}>
+          <a
+            onClick={() => {
+              props.setPage("gameBoard");
+              reloadComponent();
+            }}
+          >
             <div class="itemNavegacao">Game</div>
           </a>
         </li>
