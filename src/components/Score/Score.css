@@ -1,0 +1,25 @@
+#tabela{
+    margin:3rem;
+    text-align: center;
+    display:block;
+  
+  }
+  #tabela div{
+    display:block;
+  }
+  
+  section form{
+    border: solid 2px #0071a5;/*o retângulo */
+    font-size: 1.9rem;/* tamanho da fonte */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fff;/* cor de fundo */
+    color: #0071a5; /* cor da letra */ 
+    width:25%;/* o diametro da caixinha */
+  }
+  
+  .diamantes{
+    width: 3%;
+    /* float: right; */
+  }
