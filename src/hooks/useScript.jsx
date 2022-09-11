@@ -5,7 +5,7 @@ const useScript = (url) => {
     const script = document.createElement("script");
 
     script.src = url;
-    // script.async = true;
+    script.async = true;
 
     document.body.appendChild(script);
 
