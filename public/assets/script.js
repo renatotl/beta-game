@@ -1,11 +1,9 @@
-window.alert("holla mundo")
-console.log("funciona")
-
- const arrCrystals = [];
+const arrCrystals = [];
 const arrImages = ["d-azul", "d-cinza", "d-dourado", "d-roxo", "d-verde"];
 
 const selectedCrystal = { x: 0, y: 0 };
 let score = 0;
+let count = 0;
 
 //preenche array com imagens aleatórias e coordenadas
 function fullfillArr() {
@@ -32,7 +30,7 @@ function generateBoard() {
     document.getElementById("gameBoard").insertAdjacentHTML(
       "beforeend",
       `
-            <img class="crystalElements ${arrCrystals[i].img} column${arrCrystals[i].column} row${arrCrystals[i].row}" draggable="true" src="../images/${arrCrystals[i].img}.png" alt="" />
+            <img class="crystalElements ${arrCrystals[i].img} column${arrCrystals[i].column} row${arrCrystals[i].row}" draggable="true" src="./assets/images/${arrCrystals[i].img}.png" alt="" />
         `
     );
   }
@@ -40,11 +38,10 @@ function generateBoard() {
 //concole
 //guarda as coordenadas iniciais da imagem
 document.addEventListener("dragstart", (e) => {
-  
+  count++;
   selectedCrystal.x = e.clientX;
   selectedCrystal.y = e.clientY;
-  // console.log(selectedCrystal)
-}); 
+});
 
 //coordenadas finais da imagem
 document.addEventListener("dragend", (e) => {
@@ -202,8 +199,10 @@ function dropBoxes() {
 function generateNewItens() {
   for (let i = arrCrystals.length - 1; i >= 0; i--) {
     if (arrCrystals[i].img === "") {
-      score++;
-      setScore();
+      if (count > 0) {
+        score++;
+        setScore();
+      }
       const aleatoryNumber = Math.floor(Math.random() * 5);
       arrCrystals[i].img = arrImages[aleatoryNumber];
     }

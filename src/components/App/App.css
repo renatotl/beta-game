@@ -1,0 +1,9 @@
+*{/* zerando nossa margin e padding */
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+   font-family: 'Roboto', sans-serif;/* estilo do fonte */
+}
+.hidden{
+    display: none;
+}
