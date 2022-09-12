@@ -7,7 +7,8 @@ import imgRoxo from "../../mocks/images/d-roxo.png";
 
 export function Score() {
   return (
-    <div>
+    <section id="Tabela"> 
+    <div className="div1">
       <form>
         <div>
           <label for="nome" id="labelNome">
@@ -49,5 +50,6 @@ export function Score() {
         </div>
       </form>
     </div>
+    </section>
   );
 }

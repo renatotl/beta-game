@@ -2,8 +2,16 @@ import "../Login/Login.css";
 
 export function Login() {
   return (
-    <div className="Login">
-      <h2>Em manutenção</h2>
-    </div>
+    <section className='page login'>
+    <form onSubmit= "">
+        <fieldset>
+          <input type="name" name="name" />
+            <input type="email" name={"inputEmail"} description={"Email"} />
+            <input type="password" name={"inputPassword"} description={"Password"}/>
+            <button description={"Quero Me Logar"} />
+          
+        </fieldset>
+    </form>
+</section >
   );
 }

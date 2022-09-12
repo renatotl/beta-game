@@ -1,14 +1,19 @@
-#tabela{
+#Tabela{
+    padding: 4.1rem 0rem 4.6rem 0rem;
     margin:3rem;
     text-align: center;
     display:block;
   
   }
-  #tabela div{
+  #Tabela div{
     display:block;
   }
   
-  section form{
+  #labelNome{
+    margin: 3rem;
+   
+  }
+ section form{
     border: solid 2px #0071a5;/*o retângulo */
     font-size: 1.9rem;/* tamanho da fonte */
     display: flex;
@@ -17,9 +22,10 @@
     background-color: #fff;/* cor de fundo */
     color: #0071a5; /* cor da letra */ 
     width:25%;/* o diametro da caixinha */
+    
   }
   
   .diamantes{
-    width: 3%;
-    /* float: right; */
+    width: 15%;
+    float: right; 
   }
