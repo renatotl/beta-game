@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3001";
+const baseUrl = "https://backend-game-rdj.herokuapp.com";
 
 export const jogoRDJ = {
   registerUser: async (userBody) => {
