@@ -9,7 +9,7 @@ export function Login() {
             <input className="input" type="usernName" name="userName" placeholder="user name"  />
             <input className="input" type="email" name="email" placeholder="email"  />
             <input className="input" type="password" name="password" placeholder="password"/>
-            <button className="B" type="button"  description={"Quero Me Logar"} />
+            <button className="B" type="button" >Enviar</button  >
         </fieldset>
     </form>
 </section >
