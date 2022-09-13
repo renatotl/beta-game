@@ -26,6 +26,12 @@ export function Navbar(props) {
         </li>
         <li>
           {" "}
+          <a id="click" onClick={() => props.setPage("registration")}>
+            <div class="itemNavegacao">Register</div>
+          </a>
+        </li>
+        <li>
+          {" "}
           <a id="click" onClick={() => props.setPage("score")}>
             <div class="itemNavegacao">Scores</div>
           </a>
