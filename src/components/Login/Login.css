@@ -5,7 +5,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    
+  
 }
 
 
@@ -89,4 +89,8 @@
     background-color: rgb(126, 126, 175);/* cor do background */
     color:white;
 
+}
+
+.pageLogin{
+    padding: 4.1rem 0rem 4.1rem 0rem;
 }

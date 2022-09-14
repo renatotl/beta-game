@@ -26,7 +26,7 @@ export function Login() {
   }
 
   return (
-    <section className="page login">
+    <section className="pageLogin">
       <form className="form" onSubmit={loginUser}>
         <fieldset className="fieldset">
           <input
